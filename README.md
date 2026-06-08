@@ -1,6 +1,6 @@
-# antislop
+# Слопотрон
 
-> **Claude Code-скил: чистит русскоязычный текст от того, что выдаёт нейросеть — канцелярита, мёртвых клише, AI-маркеров и «нейротропов». Два режима: показать флаги или сразу починить.**
+> **Claude Code-скил (команда `/slopotron`): чистит русскоязычный текст от того, что выдаёт нейросеть — канцелярита, мёртвых клише, AI-маркеров и «нейротропов». Два режима: показать флаги или сразу починить.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-skill-da7756.svg)](https://docs.claude.com/en/docs/claude-code/overview)
@@ -10,7 +10,7 @@
 текст. Не переписывает смысл и структуру — только убивает маркеры.
 
 ```
-/antislop  <вставьте текст>
+/slopotron  <вставьте текст>
 → Найдено 14 флагов (критичных: 6). Живой текст: 3/7.
 → ОЧИЩЕННЫЙ ТЕКСТ: ...
 ```
@@ -21,7 +21,7 @@
 
 «Сделай менее похоже на ChatGPT» — частая правка, но руками её делать долго и
 скучно: глаз замыливается, половину клише не замечаешь. Существующие де-слоп
-инструменты заточены под английский. `antislop` собран под **русский**: канцелярит,
+инструменты заточены под английский. «Слопотрон» собран под **русский**: канцелярит,
 кальки с английского, инфобизнес-клише, SMM-артефакты, ложная авторитетность.
 
 И главное — он не просто вычищает, а **проверяет себя на пересушенность**: после
@@ -48,7 +48,7 @@
 
 | Режим | Когда | Что делает |
 |-------|-------|------------|
-| **Fix** (по умолчанию) | «почисти», «сделай человечнее», «/antislop» | находит + правит + отдаёт чистый текст |
+| **Fix** (по умолчанию) | «почисти», «сделай человечнее», «/slopotron» | находит + правит + отдаёт чистый текст |
 | **Detect** | «только флаги», «detect», «что выдаёт нейросеть» | только список проблем, текст не трогает |
 
 ## Установка
@@ -58,33 +58,33 @@
 
 **В конкретный проект:**
 ```bash
-git clone https://github.com/beaverbeard/antislop-ru.git
-cp -r antislop-ru/.claude/skills/antislop      .claude/skills/
-cp    antislop-ru/.claude/commands/antislop.md .claude/commands/
+git clone https://github.com/beaverbeard/slopotron.git
+cp -r slopotron/.claude/skills/slopotron      .claude/skills/
+cp    slopotron/.claude/commands/slopotron.md .claude/commands/
 ```
 
 **Глобально (во все проекты):**
 ```bash
-cp -r antislop-ru/.claude/skills/antislop      ~/.claude/skills/
-cp    antislop-ru/.claude/commands/antislop.md ~/.claude/commands/
+cp -r slopotron/.claude/skills/slopotron      ~/.claude/skills/
+cp    slopotron/.claude/commands/slopotron.md ~/.claude/commands/
 ```
 
-Перезапустите Claude Code — скил `antislop` и команда `/antislop` появятся в списке.
+Перезапустите Claude Code — скил «Слопотрон» (`slopotron`) и команда `/slopotron` появятся в списке.
 
 ## Использование
 
 ```bash
 # Вставить текст прямо в команду
-/antislop  Сегодня мы активно используем инновационные решения...
+/slopotron  Сегодня мы активно используем инновационные решения...
 
 # Или вызвать команду и вставить текст следующим сообщением
-/antislop
+/slopotron
 
 # Только флаги, без правки
-/antislop только флаги: <текст>
+/slopotron только флаги: <текст>
 ```
 
-Или просто словами: «прогони этот текст через antislop», «убери отсюда нейрослоп»,
+Или просто словами: «прогони этот текст через слопотрон», «убери отсюда нейрослоп»,
 «что здесь выдаёт нейросеть».
 
 ## Что считается слопом
@@ -99,7 +99,7 @@ cp    antislop-ru/.claude/commands/antislop.md ~/.claude/commands/
   тройные перечисления «быстро, просто и эффективно»
 - **Кальки:** SVO-порядок слов, заглавная после двоеточия, несогласование падежей
 
-Полный список — в [`SKILL.md`](.claude/skills/antislop/SKILL.md).
+Полный список — в [`SKILL.md`](.claude/skills/slopotron/SKILL.md).
 
 ## Настройка под себя
 
@@ -132,7 +132,7 @@ cp    antislop-ru/.claude/commands/antislop.md ~/.claude/commands/
 ## Вклад
 
 PR и issue приветствуются. Скил — это обычный Markdown в
-`.claude/skills/antislop/SKILL.md`, менять легко. Идеи: профили под разные форматы
+`.claude/skills/slopotron/SKILL.md`, менять легко. Идеи: профили под разные форматы
 (статья / доки / худлит), английская версия, расширение списка нейротропов.
 
 ## Лицензия
