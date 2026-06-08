@@ -58,15 +58,15 @@
 
 **В конкретный проект:**
 ```bash
-git clone https://github.com/beaverbeard/antislop.git
-cp -r antislop/.claude/skills/antislop      .claude/skills/
-cp    antislop/.claude/commands/antislop.md .claude/commands/
+git clone https://github.com/beaverbeard/antislop-ru.git
+cp -r antislop-ru/.claude/skills/antislop      .claude/skills/
+cp    antislop-ru/.claude/commands/antislop.md .claude/commands/
 ```
 
 **Глобально (во все проекты):**
 ```bash
-cp -r antislop/.claude/skills/antislop      ~/.claude/skills/
-cp    antislop/.claude/commands/antislop.md ~/.claude/commands/
+cp -r antislop-ru/.claude/skills/antislop      ~/.claude/skills/
+cp    antislop-ru/.claude/commands/antislop.md ~/.claude/commands/
 ```
 
 Перезапустите Claude Code — скил `antislop` и команда `/antislop` появятся в списке.
