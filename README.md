@@ -4,7 +4,7 @@
 
 # Слопотрон
 
-> **Claude Code-скил (команда `/slopotron`): чистит русскоязычный текст от того, что выдаёт нейросеть — канцелярита, мёртвых клише, AI-маркеров и «нейротропов». Два режима: показать флаги или сразу починить.**
+> **Claude Code-скил (команда `/slopotron`): отстреливает из русскоязычного текста всё, что выдаёт нейросеть — канцелярит, мёртвые клише, AI-маркеры и «нейротропы». Как DOOM-марин по демонам, только мишень — нейрослоп. Два режима: подсветить флаги или зачистить на месте.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-skill-da7756.svg)](https://docs.claude.com/en/docs/claude-code/overview)
