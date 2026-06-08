@@ -1,0 +1,8 @@
+# OS / редактор
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+
+# Личные настройки Claude Code (общий скил и команду храним, личный конфиг — нет)
+.claude/settings.local.json
