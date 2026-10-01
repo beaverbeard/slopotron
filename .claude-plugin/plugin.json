@@ -1,0 +1,22 @@
+{
+  "name": "slopotron",
+  "displayName": "Слопотрон",
+  "version": "1.0.0",
+  "description": "Находит и убирает нейрослоп из русского текста: канцелярит, AI-клише и мёртвые паттерны.",
+  "author": {
+    "name": "Rodion Scryabin (beaverbeard)",
+    "url": "https://github.com/beaverbeard"
+  },
+  "homepage": "https://github.com/beaverbeard/slopotron",
+  "repository": "https://github.com/beaverbeard/slopotron",
+  "license": "MIT",
+  "keywords": [
+    "ai-slop",
+    "russian",
+    "editing",
+    "writing"
+  ],
+  "skills": [
+    "./.claude/skills/"
+  ]
+}
