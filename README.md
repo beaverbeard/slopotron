@@ -9,6 +9,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-skill-da7756.svg)](https://docs.claude.com/en/docs/claude-code/overview)
 
+**In English.** Slopotron cleans **Russian-language text** of the tells of machine writing: bureaucratese, LLM clichés and dead rhetorical patterns, checked against a dated list of ~100 markers. Detect mode returns a table of flags with quotes and suggested fixes; Fix mode returns the cleaned text without changing its meaning or structure. Pure instructions for Claude: no scripts, no network access, nothing is stored.
+
+
 Даёте текст — Claude прогоняет его по чек-листу из ~100 признаков машинного письма,
 показывает таблицу флагов с цитатами и правками и (в режиме Fix) отдаёт очищенный
 текст. Не переписывает смысл и структуру — только убивает маркеры.
