@@ -1,7 +1,7 @@
 {
   "name": "slopotron",
   "displayName": "Слопотрон",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Detects and removes AI slop from Russian-language text: bureaucratese, LLM clichés and dead patterns, checked against ~100 dated markers.",
   "author": {
     "name": "Rodion Scryabin (beaverbeard)",
